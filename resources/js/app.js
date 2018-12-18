@@ -12,14 +12,16 @@
  * @link      https://themehybrid.com/themes/mythic
  */
 
-/**
- * A simple immediately-invoked function expression to kick-start
- * things and encapsulate our code.
- *
- * @since  1.0.0
- * @access public
- * @return void
- */
-(function() {
+// Import the parts of Foundation you need here
+import Foundation from 'foundation-sites';
 
-})();
+// Initialise Foundation
+jQuery(document).foundation();
+
+
+// Alternatively you can do something like this...
+// import { ResponsiveMenu } from 'foundation-sites';
+
+// const $menu = new ResponsiveMenu(jQuery('selector-here'), {
+// 	parentLink: true
+// });
