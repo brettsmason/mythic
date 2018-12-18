@@ -36,7 +36,7 @@ add_action( 'wp_enqueue_scripts', function() {
 	}
 
 	// Enqueue theme scripts.
-	wp_enqueue_script( 'mythic-app', asset( 'js/app.js' ), null, null, true );
+	wp_enqueue_script( 'mythic-app', asset( 'js/app.js' ), [ 'jquery' ], null, true );
 
 	// Enqueue theme styles.
 	wp_enqueue_style( 'mythic-screen', asset( 'css/screen.css' ), null, null );
