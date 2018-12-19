@@ -106,7 +106,8 @@ mix.js( `${devPath}/js/app.js`,                'js' )
 var sassConfig = {
 	outputStyle : 'expanded',
 	indentType  : 'tab',
-	indentWidth : 1
+	indentWidth : 1,
+	includePaths: [ 'node_modules/foundation-sites/scss' ]
 };
 
 // Compile SASS/CSS.
